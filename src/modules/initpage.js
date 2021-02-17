@@ -1,5 +1,6 @@
 const initpage = (() => {
     //get selectors
+    const content = document.querySelector("#content");
     const topNav = document.createElement("div");
     const headerCont = document.createElement("header");
     const restoName = document.createElement("h1");
@@ -7,6 +8,7 @@ const initpage = (() => {
     const homeBtn = document.createElement("button");
     const menuBtn = document.createElement("button");
     const aboutBtn = document.createElement("button");
+    const tabCont = document.createElement("div");
     const footer = document.createElement("footer");
 
     topNav.classList.add("top-nav");
@@ -28,12 +30,12 @@ const initpage = (() => {
     aboutBtn.classList.add("nav-buttons");
     aboutBtn.setAttribute("id", "about");
 
+    tabCont.classList.add("tab-cont");
+
     footer.textContent = "Developed by bananabread08";
     footer.classList.add("footer");
 
     const loadPage = () => {
-        const content = document.querySelector("#content");
-
         headerCont.appendChild(restoName);
         buttonCont.appendChild(homeBtn);
         buttonCont.appendChild(menuBtn);
@@ -43,10 +45,11 @@ const initpage = (() => {
         topNav.appendChild(buttonCont);
 
         content.appendChild(topNav);
+        content.appendChild(tabCont);
         content.appendChild(footer); 
     }
 
-    return {loadPage};
+    return {loadPage, tabCont};
 })();
 
 
