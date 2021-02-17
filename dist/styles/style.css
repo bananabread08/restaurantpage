@@ -19,25 +19,15 @@ body{
 
 .top-nav{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #3A3B3C;
     color: #fff;
-    height: 8vh;
-}
-
-header{
-    text-align: center;
-    font-size: 25px;
-}
-
-.button-cont{
-    display: flex;
 }
 
 .nav-buttons{
-    height: 8vh;
+    padding: 10px;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -46,6 +36,7 @@ header{
     border: none;
     font-weight: 700;
     transition: all 0.4s ease 0s;
+    opacity: 0.9;
 }
 
 .nav-buttons:hover {
@@ -57,7 +48,7 @@ header{
     transition: all 0.4s ease 0s;
 }
 
-.nav-buttons:focus{
+.nav-buttons:focus, .nav-buttons:active{
     background: #fff;
     color: #3A3B3C;
 }
@@ -72,3 +63,41 @@ header{
     text-align: center;
     font-weight: 500;
   }
+
+
+.home-cont{
+    display: none;
+    width: 50%;
+    margin: auto;
+    background-color:#fff;
+    opacity: 0.9;
+}
+
+.home-desc{
+    color: #3A3B3C;
+    font-size: 20px;
+}
+
+.menu-cont{
+    display: none;
+    background-color:#fff;
+    opacity: 0.9;
+}
+
+.menu-desc{
+    color: #3A3B3C;
+    font-size: 20px;
+}
+
+.about-cont{
+    display: none;
+    background-color:#fff;
+    opacity: 0.9;
+}
+
+.about-desc{
+    color: #3A3B3C;
+    font-size: 20px;
+}
+
+
