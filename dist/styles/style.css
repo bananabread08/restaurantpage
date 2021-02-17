@@ -1,0 +1,74 @@
+html,body{
+    height:100%;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+    font-family: Poppins;
+  }
+  
+*::after, *::before{
+    box-sizing :border-box;
+}
+
+body{
+    background-image: url("../assets/manam.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.top-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3A3B3C;
+    color: #fff;
+    height: 8vh;
+}
+
+header{
+    text-align: center;
+    font-size: 25px;
+}
+
+.button-cont{
+    display: flex;
+}
+
+.nav-buttons{
+    height: 8vh;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color:#3A3B3C;
+    letter-spacing: 1em;
+    border: none;
+    font-weight: 700;
+    transition: all 0.4s ease 0s;
+}
+
+.nav-buttons:hover {
+    background: #fff;
+    color: #3A3B3C;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.nav-buttons:focus{
+    background: #fff;
+    color: #3A3B3C;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(41, 39, 39);
+    color: white;
+    text-align: center;
+    font-weight: 500;
+  }
