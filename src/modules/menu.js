@@ -3,13 +3,11 @@ const menuItem = (name, image, description, price) => {
   }
   
     let menu = [];
-    const sisig = menuItem("Sisig", "assets/sisig.jpg", "", "PHP 500 / $10");
-    const palabok = menuItem("Crispy Palabok", "assets/palabok.jpg", "", "PHP 400 / $8");
-    const adobo = menuItem("Chicken & Pork Adobo", "assets/adobo.jpg", "", "PHP 450 / $9");
-    const sinigang = menuItem("Sinigang", "assets/sinigang.jpg", "", "PHP 500 / $10");
+    const sisig = menuItem("Sisig", "assets/sisig.jpg", "Fried chopped pork with pig ears and liver", "PHP 500");
+    const palabok = menuItem("Crispy Palabok", "assets/palabok.jpg", "Crispy Rice Noodles topped with shrimp and smoked fish flakes", "PHP 400");
+    const adobo = menuItem("Chicken & Pork Adobo", "assets/adobo.jpg", "Chicken & Pork glazed with special soy sauce mix", "PHP 450");
+    const sinigang = menuItem("Sinigang", "assets/sinigang.jpg", "Hot sour soup prepared with tamarind plus various meats", "PHP 500");
     menu.push(sisig, palabok, adobo, sinigang);
-
-
 
 const loadMenu = () => {
     const menuCont = document.createElement("div");

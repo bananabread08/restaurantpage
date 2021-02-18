@@ -7,7 +7,10 @@ const initpage = (() => {
 
     topNav.classList.add("top-nav");
     tabCont.classList.add("tab-cont");
-    footer.textContent = "Developed by bananabread08";
+    footer.innerHTML = `
+    <div>Developed by bananabread08</div>
+    <div>This is a mock-up page</div>
+    <div><a href="https://github.com/bananabread08">Github</a>`;
     footer.classList.add("footer");
 
     const createHeader = () => { //create Header
