@@ -13,7 +13,7 @@ tabBtns.forEach(button => { //button events
     });
 });
 
-const clearOtherTabs = () => {
+const clearOtherTabs = () => { //delete other tabs
     while(initpage.tabCont.hasChildNodes()){
         initpage.tabCont.removeChild(initpage.tabCont.firstChild);
     }
