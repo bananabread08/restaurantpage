@@ -11,10 +11,12 @@ html,body{
 }
 
 body{
+    height: 100%;
     background-image: url("../assets/manam.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    overflow-y: scroll;
 }
 
 .top-nav{
@@ -24,6 +26,14 @@ body{
     justify-content: center;
     background-color: #3A3B3C;
     color: #fff;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    font-size: 20px;
 }
 
 .nav-buttons{
@@ -68,6 +78,7 @@ body{
 .home-cont{
     display: none;
     width: 50%;
+    height: 100%;
     margin: auto;
     background-color:#fff;
     opacity: 0.9;
@@ -82,11 +93,19 @@ body{
     display: none;
     background-color:#fff;
     opacity: 0.9;
+    width: 70%;
+    height: 100%;
+    margin: auto;
 }
 
 .menu-desc{
     color: #3A3B3C;
     font-size: 20px;
+}
+
+.menu-desc img{
+    max-width: 40%;
+    height: auto;
 }
 
 .about-cont{
